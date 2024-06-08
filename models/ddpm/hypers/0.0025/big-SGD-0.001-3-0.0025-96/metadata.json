@@ -1,7 +1,7 @@
 {
     "IMG_SIZE": 96,
     "BATCH_SIZE": 16,
-    "LEARNING_RATE": 0.0001,
+    "LEARNING_RATE": 0.001,
     "NUM_EPOCHS": 35,
     "NUM_GENERATE_IMAGES": 9,
     "NUM_TIMESTEPS": 500,

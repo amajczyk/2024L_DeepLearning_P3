@@ -1,1 +1,30 @@
-{"IMG_SIZE": 96, "BATCH_SIZE": 16, "LEARNING_RATE": 0.0001, "NUM_EPOCHS": 35, "NUM_GENERATE_IMAGES": 9, "NUM_TIMESTEPS": 500, "MIXED_PRECISION": "fp16", "GRADIENT_ACCUMULATION_STEPS": 1, "losses": [0.5066113372643789, 0.08746924328928192, 0.06276411276000242, 0.05910935578867793, 0.0558111882613351, NaN], "fid_scores": [307.08726892382765], "fid_scores_epochs": [0], "dataset": "square96_random0.0025", "UNET_size": "big", "optimizer": "Adam", "seed": 1, "exited_loss_na": true, "execution_time": 374.55060199999997}
+{
+    "IMG_SIZE": 96,
+    "BATCH_SIZE": 16,
+    "LEARNING_RATE": 0.001,
+    "NUM_EPOCHS": 35,
+    "NUM_GENERATE_IMAGES": 9,
+    "NUM_TIMESTEPS": 500,
+    "MIXED_PRECISION": "fp16",
+    "GRADIENT_ACCUMULATION_STEPS": 1,
+    "losses": [
+        0.5066113372643789,
+        0.08746924328928192,
+        0.06276411276000242,
+        0.05910935578867793,
+        0.0558111882613351,
+        NaN
+    ],
+    "fid_scores": [
+        307.08726892382765
+    ],
+    "fid_scores_epochs": [
+        0
+    ],
+    "dataset": "square96_random0.0025",
+    "UNET_size": "big",
+    "optimizer": "Adam",
+    "seed": 1,
+    "exited_loss_na": true,
+    "execution_time": 374.55060199999997
+}
