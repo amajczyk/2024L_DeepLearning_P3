@@ -166,3 +166,4 @@ data
 diffusers/*
 *.pth
 !models/*.json
+checkpoints/*
