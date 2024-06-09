@@ -167,3 +167,5 @@ diffusers/*
 *.pth
 !models/*.json
 checkpoints/*
+*.pt
+mnist_data/*
