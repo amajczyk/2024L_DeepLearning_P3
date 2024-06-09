@@ -1,0 +1,40 @@
+diffusion_params:
+  num_timesteps: 1000
+  beta_start: 0.0001
+  beta_end: 0.02
+
+dataset_params:
+  name: "imagefolder"
+  data_dir: "data/square128_random0.01"
+  im_size: 128
+  im_channels: 3
+  batch_size: 16
+
+train_params:
+  batch_size: 16
+  learning_rate: 0.0001
+  num_epochs: 50
+  gradient_accumulation_steps: 1
+  mixed_precision: "fp16"
+  num_generate_images: 9
+  random_seed: 42
+  log_interval: 5
+  task_name: "ddpm_training"
+  checkpoint_dir: "checkpoints"
+  checkpoint_name: "ddpm_model.pt"
+  sample_output_dir: "samples"
+  use_latents: True
+
+vqvae_params:
+  down_channels : [32, 64]
+  mid_channels : [64, 64]
+  down_sample : [True]
+  num_down_layers: 2
+  num_mid_layers: 2
+  num_up_layers: 2
+  attn_down: [False]
+  z_channels: 3
+  codebook_size: 512
+  norm_channels: 32
+  num_heads: 4
+  vqvae_ckpt_path: "vqvae_checkpoint.pt"
